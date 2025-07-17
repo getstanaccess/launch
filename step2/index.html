@@ -1,33 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Redirecting...</title>
-  <meta name="referrer" content="no-referrer">
-  <script>
-    setTimeout(function() {
-      window.location.replace("https://www.stan.store/?ref=linhdao22&utm_source=instagram&utm_medium=referral");
-    }, 100);
-  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Verifying source...</title>
+
+  <!-- Chặn load favicon từ Stan Store -->
+  <link rel="icon" href="data:,">
+
+  <!-- Giữ lại referrer (ví dụ: instagram.com) -->
+  <meta name="referrer" content="origin">
+
+  <!-- CSS đơn giản tạo cảm giác uy tín -->
   <style>
     body {
       font-family: Arial, sans-serif;
-      background: #fafafa;
+      background-color: #f9f9f9;
+      color: #333;
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
       height: 100vh;
-      flex-direction: column;
-      color: #555;
+      text-align: center;
     }
-    img {
-      width: 50px;
-      margin-bottom: 15px;
+    .card {
+      background: white;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      max-width: 400px;
+    }
+    .loader {
+      margin: 1.5rem auto 0;
+      border: 5px solid #f3f3f3;
+      border-top: 5px solid #4CAF50;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      animation: spin 1s linear infinite;
+    }
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
     }
   </style>
+
+  <!-- Tự động chuyển hướng sau 3 giây -->
+  <meta http-equiv="refresh" content="3;url=https://www.stan.store/?ref=linhdao22&utm_source=instagram">
 </head>
+
 <body>
-  <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram Logo">
-  <p>Redirecting to Stan Store...</p>
+  <div class="card">
+    <h2>Verifying you're a real user...</h2>
+    <p>Please wait a moment while we redirect you securely.</p>
+    <div class="loader"></div>
+  </div>
 </body>
 </html>
