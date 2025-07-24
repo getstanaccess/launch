@@ -2,6 +2,7 @@
 <html lang="vi">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Đang chuyển hướng...</title>
   <meta name="description" content="Trang xác minh chuyển hướng đến ứng dụng tiện ích bảo mật. Vui lòng chờ hoặc bấm nút để tiếp tục.">
   <meta property="og:title" content="Ứng dụng tiện ích bảo mật">
@@ -27,6 +28,16 @@
       max-width: 450px;
       width: 90%;
     }
+
+    .logo {
+      width: 60px;
+      margin-bottom: 20px;
+    }
+
+    .illustration {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 20px;
     }
 
     .spinner {
@@ -101,12 +112,13 @@
 <body>
   <div class="container">
     <img class="logo" src="https://i.imgur.com/YVq5f7C.png" alt="Logo">
+    <img class="illustration" src="https://i.imgur.com/NM5pblp.png" alt="Minh họa ứng dụng">
     <h2>Đang chuyển hướng đến ứng dụng...</h2>
     <div class="spinner"></div>
     <p>Nếu không được chuyển hướng sau vài giây,<br>vui lòng bấm nút bên dưới để tiếp tục.</p>
 
     <div class="cta">
-      <button onclick="window.open('https://goonus.io/signup/6277729716537827230?utm_campaign=invite', '_blank')">
+      <button onclick="window.open('https://app.onus.io/your-affiliate-link', '_blank')">
         Chuyển tiếp ngay
       </button>
     </div>
